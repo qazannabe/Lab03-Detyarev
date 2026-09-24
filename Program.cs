@@ -116,3 +116,18 @@ int number = int.Parse(Console.ReadLine());
 bool isEven = (number % 2 == 0);
 
 Console.WriteLine($"Число чётное: {isEven}");
+
+// (x++)
+int a = 1;
+Console.WriteLine(a++); // показывает 1, но после покаже 2
+Console.WriteLine(a);   // показывает 2
+
+// (++x)
+int b = 1;
+Console.WriteLine(++b); // сразу покажет 2
+
+// математический пример
+int c = 1;
+int result = c++ + 10;  // 1 прибавляем к 10 и получаем 11
+Console.WriteLine(result); // получаем 11
+Console.WriteLine(c);      // показывает 2
