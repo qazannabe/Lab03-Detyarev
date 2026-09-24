@@ -131,3 +131,22 @@ int c = 1;
 int result = c++ + 10;  // 1 прибавляем к 10 и получаем 11
 Console.WriteLine(result); // получаем 11
 Console.WriteLine(c);      // показывает 2
+
+Console.WriteLine();
+Console.WriteLine("Чек в магазине");
+
+Console.Write("Сумма покупки: ");
+double purchaseAmount = double.Parse(Console.ReadLine());
+
+Console.Write("Есть карта постоянного клиента? (1 - да, 0 - нет): ");
+int loyaltyInput = int.Parse(Console.ReadLine());
+bool hasLoyaltyCard = (loyaltyInput == 1);
+
+Console.Write("Количество товаров в чеке: ");
+int itemCount = int.Parse(Console.ReadLine());
+
+bool eligibleForDiscount = (purchaseAmount >= 3000); 
+
+Console.WriteLine();
+Console.WriteLine("Результат");
+Console.WriteLine($"Скидка положена: {eligibleForDiscount}");
